@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="من الجاسوس">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12122b"/>
+      <stop offset="1" stop-color="#05050c"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#20e3ff"/>
+      <stop offset="1" stop-color="#00ffa3"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- hat brim + top -->
+  <g filter="url(#glow)" fill="none" stroke="url(#neon)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M112 196 q144 -70 288 0" />
+    <path d="M170 188 q86 -104 172 0" />
+    <!-- domino mask -->
+    <path d="M132 250
+             q0 -34 40 -34
+             q54 0 84 22
+             q30 -22 84 -22
+             q40 0 40 34
+             q0 60 -58 60
+             q-44 0 -66 -30
+             q-22 30 -66 30
+             q-58 0 -58 -60 Z"/>
+    <!-- eyes -->
+    <circle cx="196" cy="256" r="16" fill="url(#neon)" stroke="none"/>
+    <circle cx="316" cy="256" r="16" fill="url(#neon)" stroke="none"/>
+    <!-- question mark below -->
+    <path d="M232 330 q0 -30 26 -30 q26 0 26 26 q0 22 -26 30 l0 20" />
+    <circle cx="258" cy="410" r="6" fill="url(#neon)" stroke="none"/>
+  </g>
+</svg>
