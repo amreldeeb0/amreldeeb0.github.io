@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-gtvBUgkk.js","assets/definitions-CgDxbscp.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./index-LEQFLkol.js";import{i as t,n,t as r}from"./definitions-CgDxbscp.js";var i=t(`Haptics`,{web:()=>e(()=>import(`./web-gtvBUgkk.js`).then(e=>new e.HapticsWeb),__vite__mapDeps([0,1]))});export{i as Haptics,r as ImpactStyle,n as NotificationType};
